@@ -1,8 +1,15 @@
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+
 spring:
   r2dbc:
-    url: r2dbc:postgresql://localhost:5432/demo
+    url: r2dbc:postgresql://localhost:5432/demo_db
     username: demo
-    password: demo123
+    password: demo
+
   sql:
     init:
-      mode: always
+      mode: never
