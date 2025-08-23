@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy Gradle/Maven build files and source code
-COPY build/libs/*.jar app.jar
+COPY target/*.jar app.jar
 
 # Expose port your app runs on
 EXPOSE 8080
